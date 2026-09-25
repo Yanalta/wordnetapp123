@@ -12,9 +12,11 @@ database. Open it with `open build/WordNet.app`.
 
 ## Install
 
-Run `./install-app.sh` to install WordNet.app in `~/Applications`; pass an
-Applications directory as the first argument to choose another location. The
-installer builds the app if needed and replaces an existing WordNet.app.
+Run `./build-installer-app.sh` to create the clickable
+`build/WordNet Installer.app`. Open it and select **Install WordNet** to install
+the bundled app in `~/Applications`; use **Open WordNet** when installation
+finishes. This does not require administrator privileges. The existing
+`./install-app.sh` script remains available for command-line installation.
 
 Have fun,
 
