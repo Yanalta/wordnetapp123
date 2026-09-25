@@ -10,6 +10,12 @@ On macOS with the Xcode Command Line Tools installed, run `./build-app.sh`.
 The self-contained `build/WordNet.app` bundle includes the local WordNet
 database. Open it with `open build/WordNet.app`.
 
+## Install
+
+Run `./install-app.sh` to install WordNet.app in `~/Applications`; pass an
+Applications directory as the first argument to choose another location. The
+installer builds the app if needed and replaces an existing WordNet.app.
+
 Have fun,
 
   Marcus & Erik
