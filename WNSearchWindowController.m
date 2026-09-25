@@ -44,7 +44,7 @@
     NSMutableDictionary	*titles;
     NSEnumerator		*popUpButtonEnum, *itemEnum;
     NSPopUpButton		*popUpButton;
-    id <NSMenuItem>		item;
+    NSMenuItem          *item;
     NSNumber			*wordType;
     
     [super windowDidLoad];
