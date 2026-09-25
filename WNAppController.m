@@ -45,10 +45,11 @@
 
 - (void)showAboutPanel:(id)sender
 {
-    extern double	WordNetVersionNumber;
-    NSDictionary 	*options;
+    NSString        *version;
+    NSDictionary    *options;
 
-    options = [NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%g", WordNetVersionNumber] forKey:@"Version"];
+    version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+    options = [NSDictionary dictionaryWithObject:version forKey:@"Version"];
     [[NSApplication sharedApplication] orderFrontStandardAboutPanelWithOptions:options];
 }
 
@@ -88,4 +89,3 @@
 //=======================================================================================
     @end
 //=======================================================================================
-
